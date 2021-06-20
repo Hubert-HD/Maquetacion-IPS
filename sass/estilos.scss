@@ -1,0 +1,16 @@
+:root {
+  --text-color: hsla(210, 29%, 24%, 1);
+  --bg-color: hsla(204, 64%, 44%, 1);
+}
+
+@import "normalize.css";
+@import "standar.scss";
+@import "elementos/navbar.scss";
+@import "elementos/buscador.scss";
+@import "elementos/slide.scss";
+@import "elementos/main.scss";
+@import "elementos/seccion.scss";
+@import "elementos/compartir.scss";
+@import "elementos/recomendados.scss";
+@import "elementos/card.scss";
+@import "elementos/footer.scss";

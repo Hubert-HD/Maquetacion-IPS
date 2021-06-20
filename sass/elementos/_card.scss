@@ -1,0 +1,96 @@
+.card{
+  max-width: 21rem;
+  border-radius: 10px;
+  box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+
+  &__imagen{
+    width: 100%;
+    height: 78%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    box-sizing: border-box;
+    background-color: #7f8c8d;
+
+    &__titulo{
+      text-align: center;
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: white;
+      text-shadow: 0px 0px 5px #000000;
+    }
+
+    &__lugar{
+      align-self: flex-end;
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: white;
+      text-shadow: 0px 0px 5px #000000;
+    }
+  }
+
+  &__descripcion{
+    width: 100%;
+    height: 22%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 0.6rem;
+    background-color: white;
+    padding: 1rem;
+    align-items: center;
+    box-sizing: border-box;
+
+    .etiqueta{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 0.5rem;
+      grid-column: 1 / span 2;
+
+      &__icono{
+        font-size: 1.3rem;
+        color: var(--bg-color);
+      }
+    
+      &__clase{
+        font-size: 0.9rem;
+        color: var(--bg-color);
+        border: 1px solid var(--bg-color);
+        border-radius: 0.4rem;
+        padding: 0.3rem 0.6rem;
+      }
+    }
+
+    .corazon{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 0.5rem;
+
+      &__icon{
+        cursor: pointer;
+        color: hsla(6, 78%, 57%, 1);
+        font-size: 1.5rem;
+      }
+
+      &__numero{
+        color: hsla(6, 78%, 57%, 1);
+        font-size: 1.5rem;
+      }
+    }
+    
+    .flecha{
+      color: var(--text-color);
+      justify-self: end;
+      font-size: 1.5rem;
+    }
+  }
+}
+

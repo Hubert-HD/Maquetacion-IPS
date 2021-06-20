@@ -1,0 +1,61 @@
+.recomendados{
+  width: 100%;
+  margin: 1.75rem 0;
+  display: grid;
+  grid-template-columns: 10rem auto 10rem;
+  grid-template-rows: auto auto;
+
+  &__titulo{
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    color: var(--text-color);
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  &__galeria{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 29rem;
+    gap: 2.25rem;
+  }
+
+  &__button{
+    &--derecha{
+      margin: 0 0.5rem;
+      grid-row: 2 / 3;
+      grid-column: 3 / 4;
+      cursor: pointer;
+      font-size: 3rem;
+      color: var(--text-color);
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      
+      &:hover{
+        color: var(--bg-color);
+      }
+    }
+
+    &--izquierda{
+      margin: 0 0.5rem;
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+      cursor: pointer;
+      font-size: 3rem;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      transform: rotate(180deg);
+      color: var(--text-color);
+      
+      &:hover{
+        color: var(--bg-color);
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.slide{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
+  background-size: cover;
+  background-position-x: center;
+  box-sizing: border-box;
+  padding-bottom: 4.5rem;
+  gap: 2.25rem;
+
+  &__titulo{
+    margin: 0 10rem;
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    text-shadow: 0px 0px 5px #000000;
+  }
+
+  &__subtitulo{ 
+    margin: 0 10rem;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 0px 0px 5px #000000;
+  }
+
+  &__indicador{
+    margin: 0 10rem;
+    display: flex;
+    align-self: flex-end;
+    gap: 0.5em;
+  }
+}
+
+.circulo{
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: white;
+
+  &--activate{
+    background-color: white;
+  }
+  
+  &--desactivate{
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
