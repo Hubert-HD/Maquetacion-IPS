@@ -1,4 +1,5 @@
 .slide{
+  position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -8,10 +9,23 @@
   background-size: cover;
   background-position-x: center;
   box-sizing: border-box;
-  padding-bottom: 4.5rem;
   gap: 2.25rem;
+  background-color: var(--inactive);
+
+  & > *:last-child {
+    margin-bottom: 4.5rem;
+  }
+
+  &__fondo{
+    position: absolute;
+    z-index: 1;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
 
   &__titulo{
+    z-index: 10;
     margin: 0 10rem;
     color: white;
     font-weight: bold;
@@ -19,7 +33,8 @@
     text-shadow: 0px 0px 5px #000000;
   }
 
-  &__subtitulo{ 
+  &__subtitulo{
+    z-index: 10;
     margin: 0 10rem;
     color: white;
     font-size: 2rem;
@@ -27,24 +42,49 @@
   }
 
   &__indicador{
+    z-index: 10;
     margin: 0 10rem;
     display: flex;
     align-self: flex-end;
     gap: 0.5em;
   }
+
+  &__datos{
+    z-index: 10;
+    margin: 0 10rem;
+    display: flex;
+    justify-content: space-between;
+    text-shadow: 0px 0px 5px #000000;
+
+
+    &__corazon{
+      color: var(--rojo);
+      font-size: 2rem;
+    }
+    &__ubicacion{
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: white;
+      font-size: 2rem;
+      &__circulo{
+        font-size: 0.8rem;
+      }
+    }
+  }
 }
 
-.circulo{
-  width: 1em;
-  height: 1em;
+.dot{
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  margin: 0 .2rem;
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
-  background-color: white;
-
-  &--activate{
-    background-color: white;
-  }
+  display: inline-block;
+  transition: background-color 0.6s ease;
   
-  &--desactivate{
-    background-color: rgba(255, 255, 255, 0.5);
+  &:hover, &--active{
+    background-color: var(--text-color)
   }
 }

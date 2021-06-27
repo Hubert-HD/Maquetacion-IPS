@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="sass/estilos.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="icons/css/all.min.css">
-    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;700&display=swap" rel="stylesheet">
+    <title>Pagina Principal</title>
   </head>
   <body>
     <div class="fijo">
       <nav class="navbar">
-        <a href="#" class="navbar__logo">
-          <img src="img/Logo.png" alt="logo.png" class="navbar__logo__imagen">
+        <a href="." class="navbar__logo">
+          <img src="img/logo.png" alt="logo.png" class="navbar__logo__imagen">
         </a>
         <div class="navbar__menu">
-          <div class="navbar__menu__enlace">Destinos</div>
-          <div class="navbar__menu__enlace">Cultura</div>
-          <div class="navbar__menu__enlace">Mis favoritos</div>
+          <a class="navbar__menu__enlace" href="./destinos.html">Destinos</a>
+          <a class="navbar__menu__enlace" href=".">Cultura</a>
+          <a class="navbar__menu__enlace"href=".">Mis favoritos</a>
           <div class="navbar__menu__buscador">
             <form action="." class="buscador">
               <input type="text" class="buscador__input buscador__input--focus" placeholder="Buscar">
@@ -41,10 +44,10 @@
             </span>
             <div class="navbar__menu__desplegable__lista">
               <div class="navbar__menu__desplegable__lista__logo">
-                <img class="navbar__menu__desplegable__lista__logo__imagen" src="img/Logo.png" alt="logo.png">
+                <img class="navbar__menu__desplegable__lista__logo__imagen" src="img/logo.png" alt="logo.png">
               </div>
               <h3 class="navbar__menu__desplegable__lista__titulo">Ingresa a tu cuenta</h3>
-              <a class="navbar__menu__desplegable__lista__google" href="#"><span><i class="fab fa-google"></i></span>Continuar con google</a>
+              <a class="navbar__menu__desplegable__lista__google" href="."><span><i class="fab fa-google"></i></span>Continuar con google</a>
             </div>
           </div>
 
@@ -52,16 +55,66 @@
       </nav>
     </div>
 
-
-    <div class="slide" style="background-image: url(img/naturaleza.png);">
-      <h2 class="slide__titulo">Sitios naturales</h2>
-      <h3 class="slide__subtitulo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at enim ligula. Quisque nec leo et eros pharetra venenatis.</h3>
-      <div class="slide__indicador">
-        <div class="circulo circulo--activate"></div>
-        <div class="circulo circulo--desactivate"></div>
-        <div class="circulo circulo--desactivate"></div>
-        <div class="circulo circulo--desactivate"></div>
-        <div class="circulo circulo--desactivate"></div>
+    <div class="carousel">
+      <div class="slide fade">
+        <img class="slide__fondo" src="img/natural.jpg" alt="natural.png">
+        <h2 class="slide__titulo">Sitios naturales</h2>
+        <h3 class="slide__subtitulo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at enim ligula. Quisque nec leo et eros pharetra venenatis.</h3>
+        <div class="slide__indicador">
+          <span class="dot" onclick="showSlides(1)"></span>
+          <span class="dot" onclick="showSlides(2)"></span>
+          <span class="dot" onclick="showSlides(3)"></span>
+          <span class="dot" onclick="showSlides(4)"></span>
+          <span class="dot" onclick="showSlides(5)"></span>
+        </div>
+      </div>
+      <div class="slide fade">
+        <img class="slide__fondo" src="img/cultural.png" alt="cultural.png">
+        <h2 class="slide__titulo">Sitios culturales</h2>
+        <h3 class="slide__subtitulo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at enim ligula. Quisque nec leo et eros pharetra venenatis.</h3>
+        <div class="slide__indicador">
+          <span class="dot" onclick="showSlides(1)"></span>
+          <span class="dot" onclick="showSlides(2)"></span>
+          <span class="dot" onclick="showSlides(3)"></span>
+          <span class="dot" onclick="showSlides(4)"></span>
+          <span class="dot" onclick="showSlides(5)"></span>
+        </div>
+      </div>
+      <div class="slide fade">
+        <img class="slide__fondo" src="img/folclore.jpg" alt="folclore.png">
+        <h2 class="slide__titulo">Folclore</h2>
+        <h3 class="slide__subtitulo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at enim ligula. Quisque nec leo et eros pharetra venenatis.</h3>
+        <div class="slide__indicador">
+          <span class="dot" onclick="showSlides(1)"></span>
+          <span class="dot" onclick="showSlides(2)"></span>
+          <span class="dot" onclick="showSlides(3)"></span>
+          <span class="dot" onclick="showSlides(4)"></span>
+          <span class="dot" onclick="showSlides(5)"></span>
+        </div>
+      </div>
+      <div class="slide fade">
+        <img class="slide__fondo" src="img/realizaciones.jpg" alt="realizaciones.png">
+        <h2 class="slide__titulo">Realizaciones contemporaneas</h2>
+        <h3 class="slide__subtitulo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at enim ligula. Quisque nec leo et eros pharetra venenatis.</h3>
+        <div class="slide__indicador">
+          <span class="dot" onclick="showSlides(1)"></span>
+          <span class="dot" onclick="showSlides(2)"></span>
+          <span class="dot" onclick="showSlides(3)"></span>
+          <span class="dot" onclick="showSlides(4)"></span>
+          <span class="dot" onclick="showSlides(5)"></span>
+        </div>
+      </div>
+      <div class="slide fade">
+        <img class="slide__fondo" src="img/eventos.jpg" alt="eventos.png">
+        <h2 class="slide__titulo">Eventos y acontecimientos</h2>
+        <h3 class="slide__subtitulo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at enim ligula. Quisque nec leo et eros pharetra venenatis.</h3>
+        <div class="slide__indicador">
+          <span class="dot" onclick="showSlides(1)"></span>
+          <span class="dot" onclick="showSlides(2)"></span>
+          <span class="dot" onclick="showSlides(3)"></span>
+          <span class="dot" onclick="showSlides(4)"></span>
+          <span class="dot" onclick="showSlides(5)"></span>
+        </div>
       </div>
     </div>
 
@@ -70,23 +123,29 @@
     <p class="subtitulo">Quisque nec leo et eros venenatis.Curabitur ac mauris in leo fermentum</p>
 
     <div class="seccion">
-      <div class="seccion__img" style="background-image: url(img/naturaleza.png);"></div>
+      <div class="seccion__img">
+        <img class="seccion__img__imagen" src="img/natural.jpg" alt="natural.png">
+      </div>
       <div class="seccion__descripcion">
         <h3 class="seccion__descripcion__titulo">Sitios naturales</h3>
         <p class="seccion__descripcion__informacion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at enim ligula. Quisque nec leo et eros pharetra venenatis.</p>
-        <a class="seccion__descripcion__button" href=".">Explorar</a>
+        <a class="seccion__descripcion__button" href="destinos.html">Explorar</a>
       </div>
     </div>
     <div class="seccion">
       <div class="seccion__descripcion">
         <h3 class="seccion__descripcion__titulo">Sitios culturales</h3>
         <p class="seccion__descripcion__informacion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at enim ligula. Quisque nec leo et eros pharetra venenatis.</p>
-        <a class="seccion__descripcion__button" href=".">Explorar</a>
+        <a class="seccion__descripcion__button" href="destinos.html">Explorar</a>
       </div>
-      <div class="seccion__img" style="background-image: url(img/cultural.png);"></div>
+      <div class="seccion__img">
+        <img class="seccion__img__imagen" src="img/cultural.png" alt="cultural.png">
+      </div>
     </div>
     <div class="seccion">
-      <div class="seccion__img" style="background-image: url(img/folclore.png);"></div>
+      <div class="seccion__img">
+        <img class="seccion__img__imagen" src="img/folclore.jpg" alt="folclore.png">
+      </div>
       <div class="seccion__descripcion">
         <h3 class="seccion__descripcion__titulo">Folclore</h3>
         <p class="seccion__descripcion__informacion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at enim ligula. Quisque nec leo et eros pharetra venenatis.</p>
@@ -97,12 +156,16 @@
       <div class="seccion__descripcion">
         <h3 class="seccion__descripcion__titulo">Realizaciones contemporaneas</h3>
         <p class="seccion__descripcion__informacion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at enim ligula. Quisque nec leo et eros pharetra venenatis.</p>
-        <a class="seccion__descripcion__button" href=".">Explorar</a>
+        <a class="seccion__descripcion__button" href="destinos.html">Explorar</a>
       </div>
-      <div class="seccion__img" style="background-image: url(img/realizaciones.png);"></div>
+      <div class="seccion__img">
+        <img class="seccion__img__imagen" src="img/realizaciones.jpg" alt="realizaciones.png">
+      </div>
     </div>
     <div class="seccion">
-      <div class="seccion__img" style="background-image: url(img/eventos.png);"></div>
+      <div class="seccion__img">
+        <img class="seccion__img__imagen" src="img/eventos.jpg" alt="eventos.png">
+      </div>
       <div class="seccion__descripcion">
         <h3 class="seccion__descripcion__titulo">Eventos y acontecimientos</h3>
         <p class="seccion__descripcion__informacion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at enim ligula. Quisque nec leo et eros pharetra venenatis.</p>
@@ -117,12 +180,13 @@
       </div>
     </div>
 
+    <h4 class="recomendados__titulo">Recomendados para ti</h4>
     <div class="recomendados">
-      <h4 class="recomendados__titulo">Recomendados para ti</h4>
-      <span class="recomendados__button--izquierda"><i class="fas fa-chevron-right"></i></span>
+      <span class="recomendados__button--izquierda"><i class="fas fa-chevron-left"></i></span>
       <div class="recomendados__galeria">
         <div class="card">
-          <div class="card__imagen" style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.45), transparent, transparent, rgba(0, 0, 0, 0.45) ), url(../../img/naturaleza.png);">
+          <div class="card__imagen">
+            <img class="card__imagen__img" src="img/natural.jpg" alt="">
             <h5 class="card__imagen__titulo">Rio de vilcabamba</h5>
             <p class="card__imagen__lugar">Provincia</p>
           </div>
@@ -135,11 +199,12 @@
               <span class="corazon__icon"><i class="fas fa-heart"></i></span>
               <span class="corazon__numero">150</span>
             </div>
-            <a class="flecha" href="#"><i class="fas fa-arrow-right"></i></a>
+            <a class="flecha" href="lugar.html"><i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="card">
-          <div class="card__imagen" style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.45), transparent, transparent, rgba(0, 0, 0, 0.45) ), url(../../img/cultural.png);">
+          <div class="card__imagen">
+            <img class="card__imagen__img" src="img/natural.jpg" alt="">
             <h5 class="card__imagen__titulo">Rio de vilcabamba</h5>
             <p class="card__imagen__lugar">Provincia</p>
           </div>
@@ -149,14 +214,15 @@
               <span class="etiqueta__clase">Naturaleza</span>
             </div>
             <div class="corazon">
-              <span class="corazon__icon"><i class="far fa-heart"></i></span>
+              <span class="corazon__icon"><i class="fas fa-heart"></i></span>
               <span class="corazon__numero">150</span>
             </div>
-            <a class="flecha" href="#"><i class="fas fa-arrow-right"></i></a>
+            <a class="flecha" href="."><i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="card">
-          <div class="card__imagen" style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.45), transparent, transparent, rgba(0, 0, 0, 0.45) ), url(../../img/folclore.png);">
+          <div class="card__imagen">
+            <img class="card__imagen__img" src="img/natural.jpg" alt="">
             <h5 class="card__imagen__titulo">Rio de vilcabamba</h5>
             <p class="card__imagen__lugar">Provincia</p>
           </div>
@@ -166,13 +232,30 @@
               <span class="etiqueta__clase">Naturaleza</span>
             </div>
             <div class="corazon">
-              <span class="corazon__icon"><i class="far fa-heart"></i></span>
+              <span class="corazon__icon"><i class="fas fa-heart"></i></span>
               <span class="corazon__numero">150</span>
             </div>
-            <a class="flecha" href="#"><i class="fas fa-arrow-right"></i></a>
+            <a class="flecha" href="."><i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
-    
+        <div class="card">
+          <div class="card__imagen">
+            <img class="card__imagen__img" src="img/natural.jpg" alt="">
+            <h5 class="card__imagen__titulo">Rio de vilcabamba</h5>
+            <p class="card__imagen__lugar">Provincia</p>
+          </div>
+          <div class="card__descripcion">
+            <div class="etiqueta">
+              <span class="etiqueta__icono"><i class="fas fa-tag"></i></span>
+              <span class="etiqueta__clase">Naturaleza</span>
+            </div>
+            <div class="corazon">
+              <span class="corazon__icon"><i class="fas fa-heart"></i></span>
+              <span class="corazon__numero">150</span>
+            </div>
+            <a class="flecha" href="."><i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
       </div>
       <span class="recomendados__button--derecha"><i class="fas fa-chevron-right"></i></span>
     </div>
@@ -182,18 +265,18 @@
       <div class="footer">
         <div class="footer__redes-sociales">
           <p class="footer__redes-sociales__texto">Buscanos en:</p>
-          <span class="footer__redes-sociales__icono"><i class="fab fa-facebook"></i></span>
-          <span class="footer__redes-sociales__icono"><i class="fab fa-twitter"></i></span>
-          <span class="footer__redes-sociales__icono"><i class="fab fa-instagram-square"></i></span>
-          <span class="footer__redes-sociales__icono"><i class="fab fa-youtube"></i></span>
+          <a href="." class="footer__redes-sociales__icono"><i class="fab fa-facebook"></i></a>
+          <a href="." class="footer__redes-sociales__icono"><i class="fab fa-twitter"></i></a>
+          <a href="." class="footer__redes-sociales__icono"><i class="fab fa-instagram-square"></i></a>
+          <a href="." class="footer__redes-sociales__icono"><i class="fab fa-youtube"></i></a>
         </div>
         <div class="footer__contacto">
-          <span class="footer__contacto__icono"><i class="fas fa-map-marker-alt"></i></span>
-          <span class="footer__contacto__texto">Calle San Cristobal 245 Arequipa</span>
-          <span class="footer__contacto__icono"><i class="far fa-envelope"></i></span>
-          <span class="footer__contacto__texto">correo@gmail.com</span>
-          <span class="footer__contacto__icono"><i class="fas fa-phone-alt"></i></span>
-          <span class="footer__contacto__texto">123-1564894</span>
+          <span href="." class="footer__contacto__icono"><i class="fas fa-map-marker-alt"></i></span>
+          <span href="." class="footer__contacto__texto">Calle San Cristobal 245 Arequipa</span>
+          <span href="." class="footer__contacto__icono"><i class="far fa-envelope"></i></span>
+          <span href="." class="footer__contacto__texto">correo@gmail.com</span>
+          <span href="." class="footer__contacto__icono"><i class="fas fa-phone-alt"></i></span>
+          <span href="." class="footer__contacto__texto">123-1564894</span>
         </div>
       </div>
     </footer>

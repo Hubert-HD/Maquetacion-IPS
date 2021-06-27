@@ -36,8 +36,10 @@
     gap: 20px;
 
     &__enlace{
-      cursor: pointer;
+      text-decoration: none;
+      color: white;
       position: relative;
+      cursor: pointer;
       display: flex;
       align-items: center;
       font-size: 1.2em;
@@ -45,6 +47,7 @@
 
       &::before{
         content: "";
+        overflow: hidden;
         position: absolute;
         align-self: flex-end;
         bottom: -0.2em;
@@ -57,6 +60,10 @@
         &::before{
           width: 100%;
         }
+      }
+
+      &--active{
+        font-weight: bold;
       }
     }
 

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "link": "img/natural.jpg",
+    "nombre": "Nombre 1",
+    "provincia": "provincia 1",
+    "distrito": "distrito 1",
+    "categoria": "categoria 1",
+    "corazones": "75"
+  },
+  {
+    "id": "2",
+    "link": "img/natural.jpg",
+    "nombre": "Nombre 1",
+    "provincia": "provincia 1",
+    "distrito": "distrito 1",
+    "categoria": "categoria 1",
+    "corazones": "123"
+  },
+  {
+    "id": "3",
+    "link": "img/natural.jpg",
+    "nombre": "Nombre 3",
+    "provincia": "provincia 1",
+    "distrito": "distrito 1",
+    "categoria": "categoria 1",
+    "corazones": "205"
+  },
+  {
+    "id": "2",
+    "link": "img/natural.jpg",
+    "nombre": "Nombre 1",
+    "provincia": "provincia 1",
+    "distrito": "distrito 1",
+    "categoria": "categoria 1",
+    "corazones": "123"
+  },
+  {
+    "id": "3",
+    "link": "img/natural.jpg",
+    "nombre": "Nombre 3",
+    "provincia": "provincia 1",
+    "distrito": "distrito 1",
+    "categoria": "categoria 1",
+    "corazones": "205"
+  }
+]

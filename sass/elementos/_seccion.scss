@@ -6,10 +6,11 @@
   align-items: center;
 
   &__img{
-    width: 27rem;
-    height: 17rem;
-    background-size: cover;
-    background-position-x: center;
+    &__imagen{
+      width: 27rem;
+      height: 17rem;
+      object-fit: cover;
+    }
   }
 
   &__descripcion{
